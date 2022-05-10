@@ -36,8 +36,8 @@ public class toyWithTables {
 			if(column.get(1).getText().equals("20%"))
 			{
 				driver.findElement(By.xpath("(//input[@name='vital'])[5]")).click();
-				System.out.println("Vital task for the least completed progress is checked");
-			}
+				
+			}System.out.println("Vital task for the least completed progress is checked");
 	
 		}		
 }}}
