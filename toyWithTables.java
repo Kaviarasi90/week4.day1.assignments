@@ -20,9 +20,9 @@ public class toyWithTables {
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	WebElement table = driver.findElement(By.xpath("//table"));
 	List<WebElement> row = table.findElements(By.tagName("tr"));
-//	System.out.println("Row Size is: "+row.size());
-//	List<WebElement> col = table.findElements(By.tagName("th"));
-//	System.out.println("Column Size is: "+col.size());
+	System.out.println("Row Size is: "+row.size());
+	List<WebElement> col = table.findElements(By.tagName("th"));
+	System.out.println("Column Size is: "+col.size());
 	
 	//List<String> asList = new ArrayList<String>();
 	for (int i = 0; i < row.size(); i++) {
